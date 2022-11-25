@@ -6,17 +6,44 @@
           "Version": 2,
           "From": [
             {
-              "Name": "f",
-              "Entity": "Fact",
+              "Name": "p",
+              "Entity": "Product",
               "Type": 0
             },
             {
-              "Name": "c",
-              "Entity": "Customer",
+              "Name": "s",
+              "Entity": "Scenario",
+              "Type": 0
+            },
+            {
+              "Name": "f",
+              "Entity": "Fact",
               "Type": 0
             }
           ],
           "Select": [
+            {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Source": "p"
+                  }
+                },
+                "Property": "Product"
+              },
+              "Name": "Product.Product"
+            },
+            {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Source": "s"
+                  }
+                },
+                "Property": "Scenario"
+              },
+              "Name": "Scenario.Scenario"
+            },
             {
               "Measure": {
                 "Expression": {
@@ -24,20 +51,9 @@
                     "Source": "f"
                   }
                 },
-                "Property": "Sum of Revenue"
+                "Property": "GM% SPLY"
               },
-              "Name": "Fact.Sum of Revenue"
-            },
-            {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Source": "c"
-                  }
-                },
-                "Property": "City"
-              },
-              "Name": "Customer.City"
+              "Name": "Fact.GM% SPLY"
             }
           ],
           "OrderBy": [
@@ -50,7 +66,7 @@
                       "Source": "f"
                     }
                   },
-                  "Property": "Sum of Revenue"
+                  "Property": "GM% SPLY"
                 }
               }
             }
@@ -62,6 +78,15 @@
               {
                 "Projections": [
                   0,
+                  2
+                ]
+              }
+            ]
+          },
+          "Secondary": {
+            "Groupings": [
+              {
+                "Projections": [
                   1
                 ]
               }
@@ -70,6 +95,9 @@
           "DataReduction": {
             "DataVolume": 3,
             "Primary": {
+              "Top": {}
+            },
+            "Secondary": {
               "Top": {}
             }
           },

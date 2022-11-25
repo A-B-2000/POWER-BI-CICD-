@@ -1,0 +1,107 @@
+{
+  "name": "ead39ddea01ba90a07c0",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 9.613733905579398,
+        "y": 20.600858369098713,
+        "z": 0,
+        "width": 475.19313304721027,
+        "height": 402.40343347639481
+      }
+    }
+  ],
+  "singleVisual": {
+    "visualType": "pieChart",
+    "projections": {
+      "Category": [
+        {
+          "queryRef": "Product.Product",
+          "active": true
+        }
+      ],
+      "Series": [
+        {
+          "queryRef": "Scenario.Scenario"
+        }
+      ],
+      "Y": [
+        {
+          "queryRef": "Fact.GM% SPLY"
+        }
+      ]
+    },
+    "prototypeQuery": {
+      "Version": 2,
+      "From": [
+        {
+          "Name": "p",
+          "Entity": "Product",
+          "Type": 0
+        },
+        {
+          "Name": "s",
+          "Entity": "Scenario",
+          "Type": 0
+        },
+        {
+          "Name": "f",
+          "Entity": "Fact",
+          "Type": 0
+        }
+      ],
+      "Select": [
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "p"
+              }
+            },
+            "Property": "Product"
+          },
+          "Name": "Product.Product"
+        },
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "s"
+              }
+            },
+            "Property": "Scenario"
+          },
+          "Name": "Scenario.Scenario"
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "f"
+              }
+            },
+            "Property": "GM% SPLY"
+          },
+          "Name": "Fact.GM% SPLY"
+        }
+      ],
+      "OrderBy": [
+        {
+          "Direction": 2,
+          "Expression": {
+            "Measure": {
+              "Expression": {
+                "SourceRef": {
+                  "Source": "f"
+                }
+              },
+              "Property": "GM% SPLY"
+            }
+          }
+        }
+      ]
+    },
+    "hasDefaultSort": true
+  }
+}

@@ -100,8 +100,26 @@
       }
     ]
   },
-  "queryMetadata": null,
-  "visualElements": null,
+  "queryMetadata": {
+    "Select": [
+      {
+        "Restatement": "Name",
+        "Name": "Executive.Name",
+        "Type": 2048
+      }
+    ]
+  },
+  "visualElements": [
+    {
+      "DataRoles": [
+        {
+          "Name": "Values",
+          "Projection": 0,
+          "isActive": true
+        }
+      ]
+    }
+  ],
   "selects": [
     {
       "displayName": "Name",
