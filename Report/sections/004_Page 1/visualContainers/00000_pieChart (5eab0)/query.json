@@ -9,11 +9,6 @@
               "Name": "f",
               "Entity": "Fact",
               "Type": 0
-            },
-            {
-              "Name": "c",
-              "Entity": "Customer",
-              "Type": 0
             }
           ],
           "Select": [
@@ -24,20 +19,20 @@
                     "Source": "f"
                   }
                 },
-                "Property": "Sum of Revenue"
+                "Property": "Sum of Rev for Exp Travel"
               },
-              "Name": "Fact.Sum of Revenue"
+              "Name": "Fact.Sum of Rev for Exp Travel"
             },
             {
-              "Column": {
+              "Measure": {
                 "Expression": {
                   "SourceRef": {
-                    "Source": "c"
+                    "Source": "f"
                   }
                 },
-                "Property": "City"
+                "Property": "Revenue SPLY"
               },
-              "Name": "Customer.City"
+              "Name": "Fact.Revenue SPLY"
             }
           ],
           "OrderBy": [
@@ -50,7 +45,7 @@
                       "Source": "f"
                     }
                   },
-                  "Property": "Sum of Revenue"
+                  "Property": "Sum of Rev for Exp Travel"
                 }
               }
             }
@@ -66,12 +61,6 @@
                 ]
               }
             ]
-          },
-          "DataReduction": {
-            "DataVolume": 3,
-            "Primary": {
-              "Top": {}
-            }
           },
           "Version": 1
         },

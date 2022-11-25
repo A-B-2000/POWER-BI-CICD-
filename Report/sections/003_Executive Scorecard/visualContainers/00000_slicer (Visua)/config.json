@@ -132,33 +132,6 @@
           }
         }
       ]
-    },
-    "cachedFilterDisplayItems": [
-      {
-        "id": {
-          "scopeId": {
-            "Comparison": {
-              "ComparisonKind": 0,
-              "Left": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Executive"
-                    }
-                  },
-                  "Property": "ID"
-                }
-              },
-              "Right": {
-                "Literal": {
-                  "Value": "5L"
-                }
-              }
-            }
-          }
-        },
-        "displayName": "5"
-      }
-    ]
+    }
   }
 }
