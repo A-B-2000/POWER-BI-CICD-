@@ -1,0 +1,116 @@
+{
+  "projectionOrdering": {
+    "Y": [
+      0,
+      1
+    ]
+  },
+  "queryMetadata": {
+    "Select": [
+      {
+        "Restatement": "Sum of Rev for Exp Travel",
+        "Name": "Fact.Sum of Rev for Exp Travel",
+        "Type": 1,
+        "Format": "\\$#,0;(\\$#,0);\\$#,0"
+      },
+      {
+        "Restatement": "Revenue SPLY",
+        "Name": "Fact.Revenue SPLY",
+        "Type": 1,
+        "Format": "\\$#,0;(\\$#,0);\\$#,0"
+      }
+    ],
+    "Filters": [
+      {
+        "type": 2,
+        "expression": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Fact"
+              }
+            },
+            "Property": "Sum of Rev for Exp Travel"
+          }
+        }
+      },
+      {
+        "type": 2,
+        "expression": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Fact"
+              }
+            },
+            "Property": "Revenue SPLY"
+          }
+        }
+      }
+    ]
+  },
+  "visualElements": [
+    {
+      "DataRoles": [
+        {
+          "Name": "Y",
+          "Projection": 0,
+          "isActive": false
+        },
+        {
+          "Name": "Y",
+          "Projection": 1,
+          "isActive": false
+        }
+      ]
+    }
+  ],
+  "selects": [
+    {
+      "displayName": "Sum of Rev for Exp Travel",
+      "format": "\\$#,0;(\\$#,0);\\$#,0",
+      "queryName": "Fact.Sum of Rev for Exp Travel",
+      "roles": {
+        "Y": true
+      },
+      "sort": 2,
+      "sortOrder": 0,
+      "type": {
+        "category": null,
+        "underlyingType": 259
+      },
+      "expr": {
+        "Measure": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "Fact"
+            }
+          },
+          "Property": "Sum of Rev for Exp Travel"
+        }
+      }
+    },
+    {
+      "displayName": "Revenue SPLY",
+      "format": "\\$#,0;(\\$#,0);\\$#,0",
+      "queryName": "Fact.Revenue SPLY",
+      "roles": {
+        "Y": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 259
+      },
+      "expr": {
+        "Measure": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "Fact"
+            }
+          },
+          "Property": "Revenue SPLY"
+        }
+      }
+    }
+  ]
+}

@@ -1,14 +1,14 @@
 {
-  "name": "da603dc0317e0b090195",
+  "name": "5eab0014b7ecb4468274",
   "layouts": [
     {
       "id": 0,
       "position": {
-        "x": 545.23605150214587,
-        "y": 37.081545064377679,
+        "x": 289.78540772532187,
+        "y": 108.49785407725321,
         "z": 0,
-        "width": 560.34334763948493,
-        "height": 429.87124463519314
+        "width": 280.17167381974247,
+        "height": 278.79828326180257
       }
     }
   ],
@@ -17,13 +17,10 @@
     "projections": {
       "Y": [
         {
-          "queryRef": "Fact.Sum of Revenue"
-        }
-      ],
-      "Category": [
+          "queryRef": "Fact.Sum of Rev for Exp Travel"
+        },
         {
-          "queryRef": "Customer.City",
-          "active": true
+          "queryRef": "Fact.Revenue SPLY"
         }
       ]
     },
@@ -33,11 +30,6 @@
         {
           "Name": "f",
           "Entity": "Fact",
-          "Type": 0
-        },
-        {
-          "Name": "c",
-          "Entity": "Customer",
           "Type": 0
         }
       ],
@@ -49,20 +41,20 @@
                 "Source": "f"
               }
             },
-            "Property": "Sum of Revenue"
+            "Property": "Sum of Rev for Exp Travel"
           },
-          "Name": "Fact.Sum of Revenue"
+          "Name": "Fact.Sum of Rev for Exp Travel"
         },
         {
-          "Column": {
+          "Measure": {
             "Expression": {
               "SourceRef": {
-                "Source": "c"
+                "Source": "f"
               }
             },
-            "Property": "City"
+            "Property": "Revenue SPLY"
           },
-          "Name": "Customer.City"
+          "Name": "Fact.Revenue SPLY"
         }
       ],
       "OrderBy": [
@@ -75,7 +67,7 @@
                   "Source": "f"
                 }
               },
-              "Property": "Sum of Revenue"
+              "Property": "Sum of Rev for Exp Travel"
             }
           }
         }

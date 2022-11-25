@@ -35,8 +35,7 @@
               "From": [
                 {
                   "Name": "e",
-                  "Entity": "Executive",
-                  "Type": 0
+                  "Entity": "Executive"
                 }
               ],
               "Where": [
@@ -92,16 +91,26 @@
       0
     ]
   },
-  "projectionActiveItems": {
-    "Values": [
+  "queryMetadata": {
+    "Select": [
       {
-        "queryRef": "Executive.Name",
-        "suppressConcat": false
+        "Restatement": "Name",
+        "Name": "Executive.Name",
+        "Type": 2048
       }
     ]
   },
-  "queryMetadata": null,
-  "visualElements": null,
+  "visualElements": [
+    {
+      "DataRoles": [
+        {
+          "Name": "Values",
+          "Projection": 0,
+          "isActive": false
+        }
+      ]
+    }
+  ],
   "selects": [
     {
       "displayName": "Name",
