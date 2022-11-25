@@ -7,18 +7,15 @@
           "From": [
             {
               "Name": "f",
-              "Entity": "Fact",
-              "Type": 0
-            },
-            {
-              "Name": "e",
-              "Entity": "Executive",
-              "Type": 0
+              "Entity": "Fact"
             },
             {
               "Name": "d",
-              "Entity": "Date",
-              "Type": 0
+              "Entity": "Date"
+            },
+            {
+              "Name": "e",
+              "Entity": "Executive"
             }
           ],
           "Select": [
@@ -35,33 +32,6 @@
             }
           ],
           "Where": [
-            {
-              "Condition": {
-                "In": {
-                  "Expressions": [
-                    {
-                      "Column": {
-                        "Expression": {
-                          "SourceRef": {
-                            "Source": "e"
-                          }
-                        },
-                        "Property": "ID"
-                      }
-                    }
-                  ],
-                  "Values": [
-                    [
-                      {
-                        "Literal": {
-                          "Value": "5L"
-                        }
-                      }
-                    ]
-                  ]
-                }
-              }
-            },
             {
               "Condition": {
                 "In": {
@@ -140,28 +110,36 @@
                   }
                 }
               }
+            },
+            {
+              "Condition": {
+                "In": {
+                  "Expressions": [
+                    {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Source": "e"
+                          }
+                        },
+                        "Property": "ID"
+                      }
+                    }
+                  ],
+                  "Values": [
+                    [
+                      {
+                        "Literal": {
+                          "Value": "5L"
+                        }
+                      }
+                    ]
+                  ]
+                }
+              }
             }
           ]
-        },
-        "Binding": {
-          "Primary": {
-            "Groupings": [
-              {
-                "Projections": [
-                  0
-                ]
-              }
-            ]
-          },
-          "DataReduction": {
-            "DataVolume": 3,
-            "Primary": {
-              "Top": {}
-            }
-          },
-          "Version": 1
-        },
-        "ExecutionMetricsKind": 1
+        }
       }
     }
   ]
