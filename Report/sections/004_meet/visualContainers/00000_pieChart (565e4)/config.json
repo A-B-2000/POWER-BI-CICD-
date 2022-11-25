@@ -1,0 +1,134 @@
+{
+  "name": "565e475eb9404307b164",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 10,
+        "y": 20,
+        "width": 280,
+        "height": 280,
+        "z": 0
+      }
+    }
+  ],
+  "singleVisual": {
+    "visualType": "pieChart",
+    "projections": {
+      "Y": [
+        {
+          "queryRef": "Fact.YoY YTD COGS Var"
+        },
+        {
+          "queryRef": "Fact.Gross Margin SPLY"
+        },
+        {
+          "queryRef": "Fact.COGS SPLY"
+        },
+        {
+          "queryRef": "Fact.Sum of Material Costs"
+        },
+        {
+          "queryRef": "Fact.Sum of Subscription Revenue"
+        },
+        {
+          "queryRef": "Fact.YoY COGS Var"
+        }
+      ]
+    },
+    "prototypeQuery": {
+      "Version": 2,
+      "From": [
+        {
+          "Name": "f",
+          "Entity": "Fact",
+          "Type": 0
+        }
+      ],
+      "Select": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "f"
+              }
+            },
+            "Property": "YoY YTD COGS Var"
+          },
+          "Name": "Fact.YoY YTD COGS Var"
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "f"
+              }
+            },
+            "Property": "Gross Margin SPLY"
+          },
+          "Name": "Fact.Gross Margin SPLY"
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "f"
+              }
+            },
+            "Property": "COGS SPLY"
+          },
+          "Name": "Fact.COGS SPLY"
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "f"
+              }
+            },
+            "Property": "Sum of Material Costs"
+          },
+          "Name": "Fact.Sum of Material Costs"
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "f"
+              }
+            },
+            "Property": "Sum of Subscription Revenue"
+          },
+          "Name": "Fact.Sum of Subscription Revenue"
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "f"
+              }
+            },
+            "Property": "YoY COGS Var"
+          },
+          "Name": "Fact.YoY COGS Var"
+        }
+      ],
+      "OrderBy": [
+        {
+          "Direction": 2,
+          "Expression": {
+            "Measure": {
+              "Expression": {
+                "SourceRef": {
+                  "Source": "f"
+                }
+              },
+              "Property": "YoY YTD COGS Var"
+            }
+          }
+        }
+      ]
+    },
+    "hasDefaultSort": true
+  }
+}

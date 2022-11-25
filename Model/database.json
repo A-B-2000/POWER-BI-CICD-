@@ -1,5 +1,5 @@
 {
-  "name": "CustomerProfitableSampleV1",
+  "name": "CustomerProfitabilitySamplePBIX_v1",
   "compatibilityLevel": 1550,
   "model": {
     "culture": "en-US",
@@ -13,14 +13,14 @@
       {
         "name": "Fact",
         "isHidden": true,
-        "lineageTag": "bf6edd15-b95c-46d6-8f57-0779f2212252",
+        "lineageTag": "a1d326b4-b033-407c-8c12-6b39585f6c4c",
         "columns": [
           {
             "name": "Customer Key",
             "dataType": "int64",
             "isHidden": true,
             "sourceColumn": "Customer Key",
-            "lineageTag": "8785953f-cb5b-4540-a61e-38168cf461c7",
+            "lineageTag": "2bde6de0-87f4-4a68-b36b-ee2d8c2d7455",
             "summarizeBy": "none",
             "annotations": [
               {
@@ -38,7 +38,7 @@
             "dataType": "string",
             "isHidden": true,
             "sourceColumn": "Product Key",
-            "lineageTag": "3e0592c6-a786-46e9-8dfb-821c36d5879b",
+            "lineageTag": "2e077fe6-ca4a-473e-8286-ddeb6a5b7133",
             "summarizeBy": "none",
             "annotations": [
               {
@@ -52,7 +52,7 @@
             "dataType": "double",
             "isHidden": true,
             "sourceColumn": "BU Key",
-            "lineageTag": "22d046b6-e051-4fe2-9f30-cdee456c1543",
+            "lineageTag": "7a44969d-bcc2-480d-822b-0538d5f5c8b2",
             "summarizeBy": "none",
             "annotations": [
               {
@@ -70,7 +70,7 @@
             "dataType": "int64",
             "isHidden": true,
             "sourceColumn": "Scenario Key",
-            "lineageTag": "71e7c789-d698-40e2-be55-22ca023d505e",
+            "lineageTag": "4ed5eeeb-6531-4070-a658-c40bc54d3c31",
             "summarizeBy": "none",
             "annotations": [
               {
@@ -88,7 +88,7 @@
             "dataType": "double",
             "isHidden": true,
             "sourceColumn": "Revenue",
-            "lineageTag": "dbbfe005-1929-4613-b775-d35124649ed6",
+            "lineageTag": "580cca2a-6c66-4d0a-820e-73f61e6b27e6",
             "summarizeBy": "sum",
             "annotations": [
               {
@@ -106,7 +106,7 @@
             "dataType": "double",
             "isHidden": true,
             "sourceColumn": "Material Costs",
-            "lineageTag": "c0a85809-3df0-4f5a-b92b-13d29337f814",
+            "lineageTag": "b804f698-f63c-4613-b6d4-78636c234cca",
             "summarizeBy": "sum",
             "annotations": [
               {
@@ -124,7 +124,7 @@
             "dataType": "double",
             "isHidden": true,
             "sourceColumn": "Labor Costs Variable",
-            "lineageTag": "7cb87130-4b43-4547-8166-3ef3f1b48d2d",
+            "lineageTag": "1171bca1-4c4a-434d-bf2e-fbd3f171ba5c",
             "summarizeBy": "sum",
             "annotations": [
               {
@@ -142,7 +142,7 @@
             "dataType": "double",
             "isHidden": true,
             "sourceColumn": "Taxes",
-            "lineageTag": "2938d08f-7a56-4cb1-89f9-a0023bae60bc",
+            "lineageTag": "5c62e052-05cb-4211-bb73-64746f8c17ca",
             "summarizeBy": "sum",
             "annotations": [
               {
@@ -160,7 +160,7 @@
             "dataType": "double",
             "isHidden": true,
             "sourceColumn": "Rev for Exp Travel",
-            "lineageTag": "442c7945-0344-4899-85f5-6e6d731d293a",
+            "lineageTag": "b1233391-cd3e-4d06-a716-5db935b6215c",
             "summarizeBy": "sum",
             "annotations": [
               {
@@ -178,7 +178,7 @@
             "dataType": "double",
             "isHidden": true,
             "sourceColumn": "Travel Expenses",
-            "lineageTag": "01b71f2e-c6f2-435d-8f6d-865fc2b90bc4",
+            "lineageTag": "e7bf9605-1de6-4f10-9266-5dd0395a213c",
             "summarizeBy": "sum",
             "annotations": [
               {
@@ -196,7 +196,7 @@
             "dataType": "double",
             "isHidden": true,
             "sourceColumn": "Cost Third Party",
-            "lineageTag": "35a97d0e-36d2-49c2-a781-1f335acddcc9",
+            "lineageTag": "f5812191-996d-4898-8e2d-f251cdd269bd",
             "summarizeBy": "sum",
             "annotations": [
               {
@@ -214,7 +214,7 @@
             "dataType": "double",
             "isHidden": true,
             "sourceColumn": "Subscription Revenue",
-            "lineageTag": "e3c9b45f-d559-4c9c-a644-53dbec425c8b",
+            "lineageTag": "e358e5be-14b1-49cb-b43c-f4f88182fd6d",
             "summarizeBy": "sum",
             "annotations": [
               {
@@ -232,7 +232,7 @@
             "dataType": "string",
             "isHidden": true,
             "sourceColumn": "YearPeriod",
-            "lineageTag": "4fbb5fa1-6dd5-45e4-b0ba-5c399a662561",
+            "lineageTag": "d044a69c-7fda-46a3-938d-ebd34d22970c",
             "summarizeBy": "none",
             "annotations": [
               {
@@ -264,7 +264,7 @@
             "name": "Total Revenue",
             "expression": "SUM([Revenue])",
             "formatString": "\\$#,0;(\\$#,0);\\$#,0",
-            "lineageTag": "3d1baf43-7203-4bd7-b0ca-4d53dc1d4d08",
+            "lineageTag": "e6758cbd-8ac6-4aab-8f32-8740561a4233",
             "annotations": [
               {
                 "name": "PBI_FormatHint",
@@ -276,7 +276,7 @@
             "name": "Sum of Material Costs",
             "expression": "SUM([Material Costs])",
             "formatString": "\\$#,0;(\\$#,0);\\$#,0",
-            "lineageTag": "c3a7e25e-7dd2-4ab8-ad6d-214ce2dee18c",
+            "lineageTag": "b24a9bcc-24ef-4ac3-b805-667526f495e3",
             "annotations": [
               {
                 "name": "PBI_FormatHint",
@@ -288,7 +288,7 @@
             "name": "Sum of Labor Costs Variable",
             "expression": "SUM([Labor Costs Variable])",
             "formatString": "\\$#,0;(\\$#,0);\\$#,0",
-            "lineageTag": "8713e68c-97c8-41e9-8838-30e1c5876cdd",
+            "lineageTag": "a3c5b981-4d5f-4e04-8064-e5023f502fca",
             "annotations": [
               {
                 "name": "PBI_FormatHint",
@@ -300,7 +300,7 @@
             "name": "Sum of Taxes",
             "expression": "SUM([Taxes])",
             "formatString": "\\$#,0;(\\$#,0);\\$#,0",
-            "lineageTag": "812d7e4e-b848-4b31-9bfc-956a917180d3",
+            "lineageTag": "3ef82475-40b1-40b2-86e4-fff91550e4b1",
             "annotations": [
               {
                 "name": "PBI_FormatHint",
@@ -312,7 +312,7 @@
             "name": "Sum of Rev for Exp Travel",
             "expression": "SUM([Rev for Exp Travel])",
             "formatString": "\\$#,0;(\\$#,0);\\$#,0",
-            "lineageTag": "6c500bf6-c8fd-4ec3-acb7-66b8155f68fa",
+            "lineageTag": "8b51be86-8736-4997-89bb-a2f655fbd80c",
             "annotations": [
               {
                 "name": "PBI_FormatHint",
@@ -324,7 +324,7 @@
             "name": "Sum of Travel Expenses",
             "expression": "SUM([Travel Expenses])",
             "formatString": "\\$#,0;(\\$#,0);\\$#,0",
-            "lineageTag": "78b8003c-f8e2-4121-8608-c575f35fd251",
+            "lineageTag": "dd668f4d-0eef-4034-a1d7-dd2be38f9e9e",
             "annotations": [
               {
                 "name": "PBI_FormatHint",
@@ -336,7 +336,7 @@
             "name": "Sum of Cost Third Party",
             "expression": "SUM([Cost Third Party])",
             "formatString": "\\$#,0;(\\$#,0);\\$#,0",
-            "lineageTag": "960e6bfe-7ba7-45a8-942a-525c59682aaa",
+            "lineageTag": "8fc056fc-acde-4ea0-b3e8-09f08a214cba",
             "annotations": [
               {
                 "name": "PBI_FormatHint",
@@ -348,7 +348,7 @@
             "name": "Sum of Subscription Revenue",
             "expression": "SUM([Subscription Revenue])",
             "formatString": "\\$#,0;(\\$#,0);\\$#,0",
-            "lineageTag": "cef391bd-a5b2-44b8-b2f3-1f7477d60950",
+            "lineageTag": "b9b51f8d-5593-4b1a-95b6-a3427cf23c4e",
             "annotations": [
               {
                 "name": "PBI_FormatHint",
@@ -360,7 +360,7 @@
             "name": "Gross Margin",
             "expression": "[Total Revenue]-[Total COGS]",
             "formatString": "\\$#,0;(\\$#,0);\\$#,0",
-            "lineageTag": "af203d30-eaf5-4d12-91ec-2ed718df40d1",
+            "lineageTag": "7e725e99-19ef-4d53-9e66-636fcf175cc1",
             "annotations": [
               {
                 "name": "PBI_FormatHint",
@@ -372,13 +372,13 @@
             "name": "GM%",
             "expression": "DIVIDE([Gross Margin],[Total Revenue])",
             "formatString": "0.0%;-0.0%;0.0%",
-            "lineageTag": "924b993a-65cc-4540-ac61-f95b2e111ede"
+            "lineageTag": "7d1c8b8e-8610-4ac0-8a77-8bd927d19fbc"
           },
           {
             "name": "YTD Revenue",
             "expression": "TOTALYTD(SUM([Revenue]),'Date'[Date])",
             "formatString": "\\$#,0;(\\$#,0);\\$#,0",
-            "lineageTag": "4d43905b-0d5d-431f-a250-4d8025ee3e7e",
+            "lineageTag": "c37f7ae0-aefd-4511-acb5-da0a1955ae58",
             "annotations": [
               {
                 "name": "PBI_FormatHint",
@@ -390,7 +390,7 @@
             "name": "Total COGS",
             "expression": "[Sum of Material Costs]+[Sum of Labor Costs Variable]+[Sum of Taxes]+[Sum of Rev for Exp Travel]+[Sum of Travel Expenses]+[Sum of Cost Third Party]",
             "formatString": "\\$#,0;(\\$#,0);\\$#,0",
-            "lineageTag": "1c3ae145-8ad8-4f38-9afa-a1c4bdacb1bc",
+            "lineageTag": "5478d285-c170-4c20-8c37-59e2184eff8f",
             "annotations": [
               {
                 "name": "PBI_FormatHint",
@@ -402,7 +402,7 @@
             "name": "YTD COGS",
             "expression": "TOTALYTD([Total COGS],'Date'[Date])",
             "formatString": "\\$#,0;(\\$#,0);\\$#,0",
-            "lineageTag": "73c9ce9f-3853-49ca-a7e1-bd76ec10b674",
+            "lineageTag": "b59cbcdb-3263-49bc-8811-f94a6cd64da4",
             "annotations": [
               {
                 "name": "PBI_FormatHint",
@@ -414,7 +414,7 @@
             "name": "YTD Gross Margin",
             "expression": "TOTALYTD([Gross Margin],'Date'[Date])",
             "formatString": "\\$#,0;(\\$#,0);\\$#,0",
-            "lineageTag": "d02a577b-c6d1-4e99-ad3e-1b768b629028",
+            "lineageTag": "be05ea21-970b-4d33-8f20-21fcff3f9278",
             "annotations": [
               {
                 "name": "PBI_FormatHint",
@@ -426,7 +426,7 @@
             "name": "Revenue SPLY",
             "expression": "CALCULATE([Total Revenue],SAMEPERIODLASTYEAR('Date'[Date]))",
             "formatString": "\\$#,0;(\\$#,0);\\$#,0",
-            "lineageTag": "def5bc0a-2580-4dd3-a177-d527838a2638",
+            "lineageTag": "462a28db-47d5-4477-9a43-fc210ab3a51e",
             "annotations": [
               {
                 "name": "PBI_FormatHint",
@@ -438,7 +438,7 @@
             "name": "Gross Margin SPLY",
             "expression": "CALCULATE([Gross Margin],SAMEPERIODLASTYEAR('Date'[Date]))",
             "formatString": "\\$#,0;(\\$#,0);\\$#,0",
-            "lineageTag": "20d50565-3d4d-40c6-b2b0-6dac9d775dea",
+            "lineageTag": "1e36f764-989f-4d9a-a318-c8ef83e5c326",
             "annotations": [
               {
                 "name": "PBI_FormatHint",
@@ -450,19 +450,19 @@
             "name": "GM% SPLY",
             "expression": "[Gross Margin SPLY]/[Revenue SPLY]",
             "formatString": "0.0%;-0.0%;0.0%",
-            "lineageTag": "117f053d-baca-4488-889f-c7f91e262b40"
+            "lineageTag": "661aa398-5912-412c-be27-0b5dea4d517f"
           },
           {
             "name": "YTD GM%",
             "expression": "[YTD Gross Margin]/[YTD Revenue]",
             "formatString": "0.0%;-0.0%;0.0%",
-            "lineageTag": "310f9b22-4bd0-428d-897c-32f18f0120d7"
+            "lineageTag": "b21f9de8-4633-4f2c-b6b1-f89287af48a1"
           },
           {
             "name": "YTD Revenue SPLY",
             "expression": "CALCULATE([YTD Revenue],SAMEPERIODLASTYEAR(DATESYTD('Date'[Date])))",
             "formatString": "\\$#,0;(\\$#,0);\\$#,0",
-            "lineageTag": "5d628bfe-848d-46fa-8325-cb140b493d7d",
+            "lineageTag": "e9dce3ea-768b-4f5d-baba-bbcb3d946314",
             "annotations": [
               {
                 "name": "PBI_FormatHint",
@@ -474,7 +474,7 @@
             "name": "COGS SPLY",
             "expression": "CALCULATE([Total COGS],SAMEPERIODLASTYEAR('Date'[Date]))",
             "formatString": "\\$#,0;(\\$#,0);\\$#,0",
-            "lineageTag": "274af2a3-020b-4d24-a42e-ff710fd6bdf5",
+            "lineageTag": "d3aac876-c323-4c78-81da-3d76ef927bc9",
             "annotations": [
               {
                 "name": "PBI_FormatHint",
@@ -486,7 +486,7 @@
             "name": "YTD COGS SPLY",
             "expression": "CALCULATE([YTD COGS],SAMEPERIODLASTYEAR(DATESYTD('Date'[Date])))",
             "formatString": "\\$#,0;(\\$#,0);\\$#,0",
-            "lineageTag": "b890e648-1b1f-4d7d-95dd-2395e2b4d47b",
+            "lineageTag": "0824ea7f-385a-4c37-9ea5-8930d08a021c",
             "annotations": [
               {
                 "name": "PBI_FormatHint",
@@ -498,13 +498,13 @@
             "name": "YTD GM% SPLY",
             "expression": "[YTD GM SPLY]/[YTD Revenue SPLY]",
             "formatString": "0.0%;-0.0%;0.0%",
-            "lineageTag": "b5afa42c-e5f2-4422-8909-87cf39f3785b"
+            "lineageTag": "77de195a-0f64-41d6-85d4-58b5ee5573d2"
           },
           {
             "name": "YTD GM SPLY",
             "expression": "CALCULATE([YTD Gross Margin],SAMEPERIODLASTYEAR(DATESYTD('Date'[Date])))",
             "formatString": "\\$#,0;(\\$#,0);\\$#,0",
-            "lineageTag": "654975b6-42b2-4f75-b40d-3f56583ba09c",
+            "lineageTag": "689dffaf-7167-4796-b457-96d67934a6df",
             "annotations": [
               {
                 "name": "PBI_FormatHint",
@@ -516,7 +516,7 @@
             "name": "YoY Rev Var",
             "expression": "[Total Revenue]-[Revenue SPLY]",
             "formatString": "\\$#,0;(\\$#,0);\\$#,0",
-            "lineageTag": "3267456c-4ec5-4429-8723-8131c55abecd",
+            "lineageTag": "612f11a5-1a9d-4165-a1e5-0f3a347d6b0d",
             "annotations": [
               {
                 "name": "PBI_FormatHint",
@@ -528,7 +528,7 @@
             "name": "YoY GM Var",
             "expression": "[Gross Margin]-[Gross Margin SPLY]",
             "formatString": "\\$#,0;(\\$#,0);\\$#,0",
-            "lineageTag": "3a2aee75-80cc-4dbe-9f68-fe96848be2e1",
+            "lineageTag": "3756b667-e7dc-4511-b74d-291bec3fa41f",
             "annotations": [
               {
                 "name": "PBI_FormatHint",
@@ -540,19 +540,19 @@
             "name": "YoY Rev Growth",
             "expression": "IF([Revenue SPLY],[YoY Rev Var]/[Revenue SPLY],BLANK())",
             "formatString": "0.0%;-0.0%;0.0%",
-            "lineageTag": "c997e23c-4f88-47b7-87e1-2dd27588bf9f"
+            "lineageTag": "98f3b1c8-2998-4128-b222-07d4c5c0442c"
           },
           {
             "name": "YoY GM Growth",
             "expression": "IF([Gross Margin SPLY],[YoY GM Var]/[Gross Margin SPLY],BLANK())",
             "formatString": "0.0%;-0.0%;0.0%",
-            "lineageTag": "62eb1613-c67e-48e7-a196-598a03bd7a2e"
+            "lineageTag": "abe091bd-db9e-4d79-a5be-db11d069ea8a"
           },
           {
             "name": "YoY YTD Rev Var",
             "expression": "[YTD Revenue]-[YTD Revenue SPLY]",
             "formatString": "\\$#,0;(\\$#,0);\\$#,0",
-            "lineageTag": "f018dd7a-d841-463a-8db9-64b13dabf9d9",
+            "lineageTag": "793c3449-02b7-4185-9cde-2be0e0878867",
             "annotations": [
               {
                 "name": "PBI_FormatHint",
@@ -564,7 +564,7 @@
             "name": "YoY COGS Var",
             "expression": "[Total COGS]-[COGS SPLY]",
             "formatString": "\\$#,0;(\\$#,0);\\$#,0",
-            "lineageTag": "3ad1a954-7983-4447-a8e6-429ce46c8811",
+            "lineageTag": "135ce0b1-fba5-4d01-bd3d-0a63b48d292f",
             "annotations": [
               {
                 "name": "PBI_FormatHint",
@@ -576,7 +576,7 @@
             "name": "YoY YTD COGS Var",
             "expression": "[YTD COGS]-[YTD COGS SPLY]",
             "formatString": "\\$#,0;(\\$#,0);\\$#,0",
-            "lineageTag": "0aef382b-3933-4dde-bb13-b85253175a19",
+            "lineageTag": "d597ab7d-baee-40ff-a374-97d6e04a7822",
             "annotations": [
               {
                 "name": "PBI_FormatHint",
@@ -588,13 +588,13 @@
             "name": "YoY YTD GM% Var",
             "expression": "[YTD GM%]-[YTD GM% SPLY]",
             "formatString": "#,0",
-            "lineageTag": "d10b4a38-c028-4689-880e-1774b4d05250"
+            "lineageTag": "a50fd722-5de3-4c9e-93f2-67d7b510fe7a"
           },
           {
             "name": "YoY YTD GM Var",
             "expression": "[YTD Gross Margin]-[YTD GM SPLY]",
             "formatString": "\\$#,0;(\\$#,0);\\$#,0",
-            "lineageTag": "739fe9a6-d151-45ba-a40a-ad08ecd514de",
+            "lineageTag": "d7bf331e-a253-4a57-a103-8f0e0b930cfe",
             "annotations": [
               {
                 "name": "PBI_FormatHint",
@@ -605,7 +605,7 @@
           {
             "name": "YoY GM %Var",
             "expression": "[GM%]-[GM% SPLY]",
-            "lineageTag": "8a346a5d-df08-4b81-bd6e-5da0278923fa",
+            "lineageTag": "ad7c7344-606c-40b9-a572-671d66e0735a",
             "annotations": [
               {
                 "name": "PBI_FormatHint",
@@ -617,30 +617,30 @@
             "name": "YoY YTD Rev Growth",
             "expression": "IF([YTD Revenue SPLY],[YoY YTD Rev Var]/[YTD Revenue SPLY],BLANK())",
             "formatString": "0.0%;-0.0%;0.0%",
-            "lineageTag": "e79e3e43-7a00-4779-897a-6d43114dc45d"
+            "lineageTag": "0329e7b5-5a46-478c-aa95-71888d3a4995"
           },
           {
             "name": "YoY COGS Growth",
             "expression": "IF([COGS SPLY],[YoY COGS Var]/[COGS SPLY],BLANK())",
             "formatString": "0.0%;-0.0%;0.0%",
-            "lineageTag": "091b73cc-df07-4fb6-9028-fe1c81b9cc48"
+            "lineageTag": "dc1ad241-0945-4711-a81f-d4717abce527"
           },
           {
             "name": "YoY YTD COGS Growth",
             "expression": "IF([YTD COGS SPLY],[YoY YTD COGS Var]/[YTD COGS SPLY],BLANK())",
             "formatString": "0.0%;-0.0%;0.0%",
-            "lineageTag": "dcbc8791-445d-47dc-b9d7-e8609c1d43f6"
+            "lineageTag": "91428d9e-efc9-4384-bef8-4cc0665f59a8"
           },
           {
             "name": "YoY YTD GM Growth",
             "expression": "IF([YTD GM SPLY],[YoY YTD GM Var]/[YTD GM SPLY],BLANK())",
             "formatString": "0.0%;-0.0%;0.0%",
-            "lineageTag": "97ff1935-dc76-423e-ab08-3792a992021b"
+            "lineageTag": "ed0cda4c-3086-4b2e-ab81-037bd4202693"
           },
           {
             "name": "# of Customers",
             "expression": "DISTINCTCOUNT([Customer Key])",
-            "lineageTag": "65e674c8-de22-444d-9994-3ff56a1b850e",
+            "lineageTag": "e9bcc753-782b-45fa-afa7-31d2f11be991",
             "annotations": [
               {
                 "name": "PBI_FormatHint",
@@ -651,13 +651,13 @@
           {
             "name": "# of Products",
             "expression": "DISTINCTCOUNT([Product Key])",
-            "lineageTag": "666beed9-dae8-4b90-83d7-5cc0ebefcea8"
+            "lineageTag": "4b1fa4d1-ed8e-42d9-8bae-56c033d573b2"
           },
           {
             "name": "Revenue Budget",
             "expression": "CALCULATE([Total Revenue], FILTER(Scenario, Scenario[Scenario]=\"Budget\"))",
             "formatString": "\\$#,0;(\\$#,0);\\$#,0",
-            "lineageTag": "b8919237-9393-4dfc-ac2a-b3c5845326da",
+            "lineageTag": "7d76aa62-9f7c-4707-9b6b-671ab94beb94",
             "annotations": [
               {
                 "name": "PBI_FormatHint",
@@ -669,7 +669,7 @@
             "name": "Revenue Var to Budget",
             "expression": "[RevenueTY]-[Revenue Budget]",
             "formatString": "\\$#,0;(\\$#,0);\\$#,0",
-            "lineageTag": "a399f4aa-d94a-42cb-a358-9a261ec9a7eb",
+            "lineageTag": "599679f0-dced-48c1-bcdc-0a0d4eef2fff",
             "annotations": [
               {
                 "name": "PBI_FormatHint",
@@ -681,13 +681,13 @@
             "name": "Revenue Var % to Budget",
             "expression": "DIVIDE([Revenue Var to Budget], [RevenueTY])",
             "formatString": "0.00%;-0.00%;0.00%",
-            "lineageTag": "19719340-eaad-4b73-b70d-85aecaa15339"
+            "lineageTag": "92d202ea-b529-48dc-8719-9c359a40a6f9"
           },
           {
             "name": "RevenueTY",
             "expression": "CALCULATE([Total Revenue], FILTER(Scenario, Scenario[Scenario]=\"Actual\"))",
             "formatString": "\\$#,0;(\\$#,0);\\$#,0",
-            "lineageTag": "c6a0b66a-a40a-4a38-984d-a7830a83d7a9",
+            "lineageTag": "cb8fa6d6-f57b-4c93-8142-b55301f77813",
             "kpi": {
               "targetExpression": "'Fact'[Revenue Budget]",
               "targetFormatString": "\\$#,0;(\\$#,0);\\$#,0",
@@ -742,7 +742,7 @@
           {
             "name": "Sum of Revenue",
             "expression": "SUM('Fact'[Revenue])",
-            "lineageTag": "830f42b5-5575-45b6-b100-3fd9f9fc9f84",
+            "lineageTag": "b0598e8e-ea5d-4866-a895-34d65b017503",
             "annotations": [
               {
                 "name": "PBI_FormatHint",
@@ -754,14 +754,14 @@
       },
       {
         "name": "BU",
-        "lineageTag": "dbf7f7dd-4894-4bd1-a949-54b4047331e1",
+        "lineageTag": "03018dfd-e2d5-410d-a003-babd7be1dfae",
         "columns": [
           {
             "name": "BU Key",
             "dataType": "double",
             "isHidden": true,
             "sourceColumn": "BU Key",
-            "lineageTag": "8010730f-a517-48a6-900d-a4a502eb2e0f",
+            "lineageTag": "4665e056-adb3-464b-9114-2e2da5739bb4",
             "summarizeBy": "none",
             "annotations": [
               {
@@ -778,7 +778,7 @@
             "name": "BU",
             "dataType": "string",
             "sourceColumn": "BU",
-            "lineageTag": "b2a69c5c-3170-4085-a6f7-0b8f0a5ec416",
+            "lineageTag": "513e029f-404b-4962-b276-bcfde5f14a85",
             "summarizeBy": "none",
             "annotations": [
               {
@@ -791,7 +791,7 @@
             "name": "Division",
             "dataType": "string",
             "sourceColumn": "Division",
-            "lineageTag": "f8961a3e-0000-4494-9ce8-dd8ee75657ac",
+            "lineageTag": "741b28a8-c412-4874-bdfc-7182a6ff797c",
             "summarizeBy": "none",
             "annotations": [
               {
@@ -805,7 +805,7 @@
             "dataType": "int64",
             "isHidden": true,
             "sourceColumn": "Executive_id",
-            "lineageTag": "ed09892f-76ba-4a42-bc12-20952045cf4d",
+            "lineageTag": "751e8897-c999-4eb1-8504-bcc1c9ae09c6",
             "summarizeBy": "none",
             "annotations": [
               {
@@ -835,19 +835,19 @@
         "hierarchies": [
           {
             "name": "BUHierarchy",
-            "lineageTag": "e87ae771-667c-44c8-95eb-3c6061527a7c",
+            "lineageTag": "b6885faa-4f91-4d4f-8e93-54f0b4af7d3e",
             "levels": [
               {
                 "name": "Division",
                 "ordinal": 0,
                 "column": "Division",
-                "lineageTag": "96abe07c-6702-45dc-b873-74cec3ca83f9"
+                "lineageTag": "bd3d250b-27ad-49db-af38-40d50ad0ec92"
               },
               {
                 "name": "BU",
                 "ordinal": 1,
                 "column": "BU",
-                "lineageTag": "103741aa-0adc-46d2-a079-7107988f41b0"
+                "lineageTag": "5aad450a-27e2-4834-9693-9ef6ceaa09b0"
               }
             ]
           }
@@ -855,14 +855,14 @@
       },
       {
         "name": "Date",
-        "lineageTag": "7b5287b8-0adc-4f89-a5aa-6309cbfccdc4",
+        "lineageTag": "528f724c-4dd5-41d0-9708-a0f60f7c1152",
         "dataCategory": "Time",
         "columns": [
           {
             "name": "YearPeriod",
             "dataType": "string",
             "sourceColumn": "YearPeriod",
-            "lineageTag": "597b7490-ee5b-481b-b9f6-b4ad033e8a7d",
+            "lineageTag": "7da2a578-281b-4c98-a8a2-09f771ae0256",
             "summarizeBy": "none",
             "annotations": [
               {
@@ -875,7 +875,7 @@
             "name": "Year",
             "dataType": "int64",
             "sourceColumn": "Year",
-            "lineageTag": "6e7ba93f-5c17-4c68-9b63-dd37775e1471",
+            "lineageTag": "cd224f34-b902-48b0-a16a-d77a3e4471f8",
             "summarizeBy": "sum",
             "annotations": [
               {
@@ -892,7 +892,7 @@
             "name": "Period",
             "dataType": "string",
             "sourceColumn": "Period",
-            "lineageTag": "78cb4ea8-33bd-4213-a761-dfc55b2407f2",
+            "lineageTag": "7a200271-96bd-487d-8e8a-47dc5293b377",
             "summarizeBy": "none",
             "annotations": [
               {
@@ -907,7 +907,7 @@
             "isKey": true,
             "sourceColumn": "Date",
             "formatString": "General Date",
-            "lineageTag": "0cd7d171-0227-4ad2-9fa2-4c499680ffe4",
+            "lineageTag": "b21f2109-6f5a-4089-9e72-ba5227c3607e",
             "summarizeBy": "none",
             "variations": [
               {
@@ -932,7 +932,7 @@
             "dataType": "string",
             "sourceColumn": "Month",
             "sortByColumn": "Period",
-            "lineageTag": "60612c50-c560-413b-9981-9cf77358fe7c",
+            "lineageTag": "4182776e-6f21-42da-840b-e9e2f35ee87e",
             "summarizeBy": "none",
             "annotations": [
               {
@@ -945,7 +945,7 @@
             "name": "QtrID",
             "dataType": "string",
             "sourceColumn": "QtrID",
-            "lineageTag": "8f3fc05a-d3cf-4199-be72-be754ef00389",
+            "lineageTag": "52d98ab5-8381-4f67-b8e5-907e5f7cea3f",
             "summarizeBy": "none",
             "annotations": [
               {
@@ -958,7 +958,7 @@
             "name": "Qtr",
             "dataType": "string",
             "sourceColumn": "Qtr",
-            "lineageTag": "6378d58d-61b1-4685-b828-eaec03801252",
+            "lineageTag": "a9618178-e45c-4025-833b-b9b843a37f2e",
             "summarizeBy": "none",
             "annotations": [
               {
@@ -988,25 +988,25 @@
         "hierarchies": [
           {
             "name": "YQM",
-            "lineageTag": "fc504281-1bb1-4295-8069-4feaf9fd2389",
+            "lineageTag": "41209e92-5e76-4b7b-a264-c86366fe1cc7",
             "levels": [
               {
                 "name": "Year",
                 "ordinal": 0,
                 "column": "Year",
-                "lineageTag": "e089fe4b-6eec-4608-8320-41dc8d0f2ecc"
+                "lineageTag": "28e08325-3e59-4393-b6fe-aeca9649ecf0"
               },
               {
                 "name": "Qtr",
                 "ordinal": 1,
                 "column": "Qtr",
-                "lineageTag": "ee56e95f-b2e1-4253-8b92-83fec1da20b8"
+                "lineageTag": "4bf13935-52e7-44c7-a19f-4e74665613d1"
               },
               {
                 "name": "Month",
                 "ordinal": 2,
                 "column": "Month",
-                "lineageTag": "4bd905d5-0e51-4b76-ba7c-190af4b9decd"
+                "lineageTag": "45c293d2-911e-4fab-b98f-23be398f9910"
               }
             ]
           }
@@ -1020,14 +1020,14 @@
       },
       {
         "name": "Scenario",
-        "lineageTag": "93a25668-d608-403a-ac72-9f807608e788",
+        "lineageTag": "f418813c-3c6b-4935-960b-b3632681b4b3",
         "columns": [
           {
             "name": "Scenario Key",
             "dataType": "int64",
             "isHidden": true,
             "sourceColumn": "Scenario Key",
-            "lineageTag": "bc9f6f4c-e107-46aa-884f-3376876c0349",
+            "lineageTag": "f3a31f57-93c7-4aab-adee-bd4d702d6279",
             "summarizeBy": "none",
             "annotations": [
               {
@@ -1044,7 +1044,7 @@
             "name": "Scenario",
             "dataType": "string",
             "sourceColumn": "Scenario",
-            "lineageTag": "575ade7d-6ddc-4063-a3c8-df1d17ed8623",
+            "lineageTag": "fb000e26-12ef-433a-96b4-c0800ca8f308",
             "summarizeBy": "none",
             "annotations": [
               {
@@ -1074,14 +1074,14 @@
       },
       {
         "name": "Product",
-        "lineageTag": "2d5e2ab7-8327-43ee-abda-4f727db470b1",
+        "lineageTag": "4a387430-ccfa-4439-afd1-771775eab22a",
         "columns": [
           {
             "name": "Product Key",
             "dataType": "int64",
             "isHidden": true,
             "sourceColumn": "Product Key",
-            "lineageTag": "3df70e45-1ca9-497f-8f6b-65d86aa94110",
+            "lineageTag": "7e5bebe3-5cd2-4710-aee0-63710cd7255d",
             "summarizeBy": "none",
             "annotations": [
               {
@@ -1098,7 +1098,7 @@
             "name": "Product",
             "dataType": "string",
             "sourceColumn": "Product",
-            "lineageTag": "5c98f5b7-77a1-438d-a8c7-b1d48f0b7236",
+            "lineageTag": "aaac3548-eb74-43d2-a561-e1083c5dabbe",
             "summarizeBy": "none",
             "annotations": [
               {
@@ -1128,14 +1128,14 @@
       },
       {
         "name": "Customer",
-        "lineageTag": "750c30c2-7ceb-4e35-b224-f3c5d1d774e6",
+        "lineageTag": "affe8518-2712-482c-a123-6cb84df8cda7",
         "columns": [
           {
             "name": "Customer",
             "dataType": "double",
             "isHidden": true,
             "sourceColumn": "Customer",
-            "lineageTag": "bba7dfb7-946b-4988-8e57-19d05f433542",
+            "lineageTag": "7c3294b6-b06b-47c4-b7af-0df4ff36f70b",
             "summarizeBy": "none",
             "annotations": [
               {
@@ -1148,7 +1148,7 @@
             "name": "Country/Region",
             "dataType": "string",
             "sourceColumn": "Country/Region",
-            "lineageTag": "efb25391-36a0-4503-ba9e-a227e6efc383",
+            "lineageTag": "f1a6a290-1d38-4905-8b4e-702291f7987a",
             "summarizeBy": "none",
             "annotations": [
               {
@@ -1161,7 +1161,7 @@
             "name": "Name",
             "dataType": "string",
             "sourceColumn": "Name",
-            "lineageTag": "38eda1a8-79be-407e-9d20-2f203e52050a",
+            "lineageTag": "7dc2050f-7bf3-4ff0-87bd-ed22be193eb7",
             "summarizeBy": "none",
             "annotations": [
               {
@@ -1174,7 +1174,7 @@
             "name": "City",
             "dataType": "string",
             "sourceColumn": "City",
-            "lineageTag": "0561b3af-d627-4d3d-879f-5914630bba12",
+            "lineageTag": "aac3b473-cbc1-48b3-bbf9-3cbf06b9797f",
             "dataCategory": "City",
             "summarizeBy": "none",
             "annotations": [
@@ -1188,7 +1188,7 @@
             "name": "Postal Code",
             "dataType": "double",
             "sourceColumn": "Postal Code",
-            "lineageTag": "df13f864-85e1-4848-8ccc-b0de7f7b0228",
+            "lineageTag": "9d5f1e85-5f12-474a-8394-c939198fe6b0",
             "dataCategory": "PostalCode",
             "summarizeBy": "count",
             "annotations": [
@@ -1206,7 +1206,7 @@
             "name": "State",
             "dataType": "string",
             "sourceColumn": "State",
-            "lineageTag": "9840a247-9838-48ca-ad34-3e7a745508c1",
+            "lineageTag": "519eee0b-6976-4a1d-b3fc-2bbbd2fdc3c3",
             "dataCategory": "StateOrProvince",
             "summarizeBy": "none",
             "annotations": [
@@ -1221,7 +1221,7 @@
             "dataType": "double",
             "isHidden": true,
             "sourceColumn": "Industry ID",
-            "lineageTag": "dc5a22b7-5534-42f6-9e79-47f26755705c",
+            "lineageTag": "96f6eb17-e94d-4d8a-9cdf-fbf5e23aa10b",
             "summarizeBy": "none",
             "annotations": [
               {
@@ -1257,37 +1257,37 @@
         "hierarchies": [
           {
             "name": "CustomerHierarchy",
-            "lineageTag": "acca1951-9f56-46a6-88ec-65a1af3596af",
+            "lineageTag": "a7b6b7f2-46e7-4b71-af1b-60a9976c5651",
             "levels": [
               {
                 "name": "Country",
                 "ordinal": 0,
                 "column": "Country/Region",
-                "lineageTag": "6d351254-aa43-4dfb-b740-8ccec58bfa44"
+                "lineageTag": "b9956b8c-b439-4f4a-aace-85384b05e49e"
               },
               {
                 "name": "State",
                 "ordinal": 1,
                 "column": "State",
-                "lineageTag": "4f17cba2-898b-4136-bb96-384b343cb8b5"
+                "lineageTag": "445dd361-7efc-47ae-bc5a-9ad850fe741e"
               },
               {
                 "name": "City",
                 "ordinal": 2,
                 "column": "City",
-                "lineageTag": "1d7aac4b-cd42-42e8-8332-0f25cd231e21"
+                "lineageTag": "5beff77e-1eef-4837-8706-b9c052d2fbd9"
               },
               {
                 "name": "Postal Code",
                 "ordinal": 3,
                 "column": "Postal Code",
-                "lineageTag": "81c7b3f8-b304-4ab3-bfa7-9c2d80dd4d59"
+                "lineageTag": "df2c9a43-632b-42cf-af16-b28c558cef98"
               },
               {
                 "name": "Customer",
                 "ordinal": 4,
                 "column": "Customer",
-                "lineageTag": "3533ad5f-1deb-4ef1-ad30-f9c8f933c1eb"
+                "lineageTag": "d7919f7a-e256-4fb1-a09e-069a90376688"
               }
             ]
           }
@@ -1295,7 +1295,7 @@
       },
       {
         "name": "Industry",
-        "lineageTag": "a2940716-7748-464c-8eea-79f5da07b364",
+        "lineageTag": "a1344922-ccf8-4d94-9d6c-632c65aa4401",
         "columns": [
           {
             "name": "ID",
@@ -1304,7 +1304,7 @@
             "isKey": true,
             "sourceColumn": "ID",
             "keepUniqueRows": true,
-            "lineageTag": "0b4fbefb-7a42-47b1-bb4c-6e15f0b69bff",
+            "lineageTag": "9c932103-d1e2-4c2d-917f-b3e285cd23e7",
             "summarizeBy": "none",
             "annotations": [
               {
@@ -1322,7 +1322,7 @@
             "dataType": "string",
             "sourceColumn": "Industry",
             "keepUniqueRows": true,
-            "lineageTag": "2c5a10a9-c959-4ec8-8b61-edafc1b83072",
+            "lineageTag": "4936fe6c-d2a6-4e5a-8c0a-fe383b173172",
             "isDefaultLabel": true,
             "summarizeBy": "none",
             "annotations": [
@@ -1336,7 +1336,7 @@
             "name": "Image",
             "dataType": "binary",
             "sourceColumn": "Image",
-            "lineageTag": "88e74b9c-f1a5-4a2e-b145-19953f4a4106",
+            "lineageTag": "a148ad16-6c2c-4a48-977b-3f9527e62ce1",
             "dataCategory": "Image",
             "isDefaultImage": true,
             "summarizeBy": "none",
@@ -1372,7 +1372,7 @@
       },
       {
         "name": "Executive",
-        "lineageTag": "eff2f92b-3ba0-4fd8-baf3-fec61e794eaa",
+        "lineageTag": "3d4a774a-da99-42d6-b673-ceeeed8e6293",
         "columns": [
           {
             "name": "ID",
@@ -1381,7 +1381,7 @@
             "isKey": true,
             "sourceColumn": "ID",
             "keepUniqueRows": true,
-            "lineageTag": "a6b6ea30-e410-49c0-9073-376cefd5780e",
+            "lineageTag": "564f6689-1fb8-48ed-8266-021d9f048d50",
             "summarizeBy": "none",
             "annotations": [
               {
@@ -1398,7 +1398,7 @@
             "name": "Name",
             "dataType": "string",
             "sourceColumn": "Name",
-            "lineageTag": "959357cb-a558-4864-8db6-f8a62cc16ef1",
+            "lineageTag": "11eba444-1770-467e-ad1a-f13bf2e2876f",
             "isDefaultLabel": true,
             "summarizeBy": "none",
             "annotations": [
@@ -1412,7 +1412,7 @@
             "name": "Img",
             "dataType": "binary",
             "sourceColumn": "Img",
-            "lineageTag": "26aca01a-2aac-46dc-b2ab-1dee21acfb2a",
+            "lineageTag": "ef0a23b5-0f2e-4f7d-8a38-fa2e13bd1030",
             "dataCategory": "Image",
             "isDefaultImage": true,
             "summarizeBy": "none",
@@ -1448,13 +1448,13 @@
       },
       {
         "name": "State",
-        "lineageTag": "13bd489c-d5cf-4478-a0f0-1da7c1afe537",
+        "lineageTag": "58c80180-0ab3-4650-9f80-e267782945e3",
         "columns": [
           {
             "name": "StateCode",
             "dataType": "string",
             "sourceColumn": "StateCode",
-            "lineageTag": "b247d800-9e42-4d4a-b20d-793f97f79301",
+            "lineageTag": "d6ec9133-0770-46d2-bb23-dbbcb15151df",
             "dataCategory": "StateOrProvince",
             "summarizeBy": "none",
             "annotations": [
@@ -1468,7 +1468,7 @@
             "name": "State",
             "dataType": "string",
             "sourceColumn": "State",
-            "lineageTag": "fa0f970f-e972-4e19-8bc6-b009f11ce222",
+            "lineageTag": "fe125743-b58e-4c8b-a261-67d96de65f79",
             "dataCategory": "StateOrProvince",
             "summarizeBy": "none",
             "annotations": [
@@ -1482,7 +1482,7 @@
             "name": "Region",
             "dataType": "string",
             "sourceColumn": "Region",
-            "lineageTag": "9f6d00cf-faeb-46f7-ace6-bf58be086e78",
+            "lineageTag": "4952e913-c34a-4157-9748-ad212e332407",
             "dataCategory": "Country",
             "summarizeBy": "none",
             "annotations": [
@@ -1515,7 +1515,7 @@
         "name": "DateTableTemplate_fe310476-3bb5-422b-85ff-9fd23f2cad67",
         "isHidden": true,
         "isPrivate": true,
-        "lineageTag": "ba685e0d-f755-40aa-b8d7-5888ddd1fa50",
+        "lineageTag": "e5f6e613-3491-47c2-bfc1-1a8cf510b2d2",
         "columns": [
           {
             "type": "calculatedTableColumn",
@@ -1525,7 +1525,7 @@
             "isDataTypeInferred": true,
             "isHidden": true,
             "sourceColumn": "[Date]",
-            "lineageTag": "2f425677-7df9-4cb4-b811-c3837c3a33ba",
+            "lineageTag": "4f20b7ad-42db-40c4-8be7-d9bf86d5dea4",
             "dataCategory": "PaddedDateTableDates",
             "summarizeBy": "none",
             "annotations": [
@@ -1542,7 +1542,7 @@
             "isDataTypeInferred": true,
             "isHidden": true,
             "expression": "YEAR([Date])",
-            "lineageTag": "679244b6-5216-4724-9b5f-c8ca54cf92e4",
+            "lineageTag": "6dd17aa7-5137-4a81-a0c6-64ded7820e91",
             "dataCategory": "Years",
             "summarizeBy": "none",
             "annotations": [
@@ -1563,7 +1563,7 @@
             "isDataTypeInferred": true,
             "isHidden": true,
             "expression": "MONTH([Date])",
-            "lineageTag": "f81e6c3d-6d7c-4f09-a066-1bbd74a3933d",
+            "lineageTag": "ada9c6e9-7803-4a07-9d69-67ae5d14baaf",
             "dataCategory": "MonthOfYear",
             "summarizeBy": "none",
             "annotations": [
@@ -1585,7 +1585,7 @@
             "isHidden": true,
             "expression": "FORMAT([Date], \"MMMM\")",
             "sortByColumn": "MonthNo",
-            "lineageTag": "cb112986-55c9-4a12-b677-4ae1c85d9092",
+            "lineageTag": "d830618d-d838-4d8e-a979-196d9ad189f0",
             "dataCategory": "Months",
             "summarizeBy": "none",
             "annotations": [
@@ -1606,7 +1606,7 @@
             "isDataTypeInferred": true,
             "isHidden": true,
             "expression": "INT(([MonthNo] + 2) / 3)",
-            "lineageTag": "25ff604c-62c9-46c9-a5e9-4c0d1ca3cb20",
+            "lineageTag": "5e0a88a1-9ce1-4a21-9f6a-3b15848727f7",
             "dataCategory": "QuarterOfYear",
             "summarizeBy": "none",
             "annotations": [
@@ -1628,7 +1628,7 @@
             "isHidden": true,
             "expression": "\"Qtr \" & [QuarterNo]",
             "sortByColumn": "QuarterNo",
-            "lineageTag": "62a51c5d-ca5e-4556-b0a4-99404404c1df",
+            "lineageTag": "c8f3e20c-44fc-4252-9574-52ddb7e896ca",
             "dataCategory": "Quarters",
             "summarizeBy": "none",
             "annotations": [
@@ -1649,7 +1649,7 @@
             "isDataTypeInferred": true,
             "isHidden": true,
             "expression": "DAY([Date])",
-            "lineageTag": "28664d0e-5db2-431e-bef0-9698af41fbd2",
+            "lineageTag": "b1c99358-fae6-4521-a4df-6cba64eda36c",
             "dataCategory": "DayOfMonth",
             "summarizeBy": "none",
             "annotations": [
@@ -1677,31 +1677,31 @@
         "hierarchies": [
           {
             "name": "Date Hierarchy",
-            "lineageTag": "bf4a7078-a793-4211-bac2-6adaa0ada0b9",
+            "lineageTag": "bd1f3f06-23d8-420b-8318-095975e6570b",
             "levels": [
               {
                 "name": "Year",
                 "ordinal": 0,
                 "column": "Year",
-                "lineageTag": "cb01e687-4071-42ff-8a67-591aa4a0c5a3"
+                "lineageTag": "78b48936-0269-4fcb-8743-61f99880618f"
               },
               {
                 "name": "Quarter",
                 "ordinal": 1,
                 "column": "Quarter",
-                "lineageTag": "c812cbb3-c13d-4c21-972d-2b7c789da1c0"
+                "lineageTag": "495c2ed9-999d-4db2-99f1-6a20303a0d67"
               },
               {
                 "name": "Month",
                 "ordinal": 2,
                 "column": "Month",
-                "lineageTag": "dbd91bb9-0739-4893-a055-7e264004fc76"
+                "lineageTag": "e3877272-bad1-44fa-8e5c-ed2a9ceb7ade"
               },
               {
                 "name": "Day",
                 "ordinal": 3,
                 "column": "Day",
-                "lineageTag": "e7f9070a-6c2c-4110-8c06-eaa48265cd9f"
+                "lineageTag": "6f93931e-535a-4d74-8568-909ee9e399b8"
               }
             ],
             "annotations": [
@@ -1727,7 +1727,7 @@
         "name": "LocalDateTable_39c22ddb-27f3-4e6c-8a44-a3380850fcb4",
         "isHidden": true,
         "showAsVariationsOnly": true,
-        "lineageTag": "5801d10a-a599-41d3-8fb5-bdadd0da3f80",
+        "lineageTag": "07d2fc90-a44f-4568-8b6d-004a9091d0d4",
         "columns": [
           {
             "type": "calculatedTableColumn",
@@ -1737,7 +1737,7 @@
             "isDataTypeInferred": true,
             "isHidden": true,
             "sourceColumn": "[Date]",
-            "lineageTag": "c54f336f-256d-4c59-b12f-7d22b48b84d1",
+            "lineageTag": "d7c6692d-61a9-46b2-9ddd-44028528154b",
             "dataCategory": "PaddedDateTableDates",
             "summarizeBy": "none",
             "annotations": [
@@ -1754,7 +1754,7 @@
             "isDataTypeInferred": true,
             "isHidden": true,
             "expression": "YEAR([Date])",
-            "lineageTag": "246c5699-4c2e-483f-b418-e5aa86479833",
+            "lineageTag": "fb707a23-9a75-4829-8b1c-235f3b8d1833",
             "dataCategory": "Years",
             "summarizeBy": "none",
             "annotations": [
@@ -1775,7 +1775,7 @@
             "isDataTypeInferred": true,
             "isHidden": true,
             "expression": "MONTH([Date])",
-            "lineageTag": "c0936efc-c3af-49d4-b828-8c4209fb6398",
+            "lineageTag": "bb17a764-93d1-4f4f-8bff-261ffe2d63a5",
             "dataCategory": "MonthOfYear",
             "summarizeBy": "none",
             "annotations": [
@@ -1797,7 +1797,7 @@
             "isHidden": true,
             "expression": "FORMAT([Date], \"MMMM\")",
             "sortByColumn": "MonthNo",
-            "lineageTag": "a2b1053f-fc5b-4bbf-b379-2ebea6ce64a0",
+            "lineageTag": "8cc00a59-287b-4fb5-9839-560e37adfd56",
             "dataCategory": "Months",
             "summarizeBy": "none",
             "annotations": [
@@ -1818,7 +1818,7 @@
             "isDataTypeInferred": true,
             "isHidden": true,
             "expression": "INT(([MonthNo] + 2) / 3)",
-            "lineageTag": "22cb7e24-f7a6-4be2-ac4a-e3e48b5777d7",
+            "lineageTag": "50c8644a-7b4e-44a1-abc7-b1c19048f009",
             "dataCategory": "QuarterOfYear",
             "summarizeBy": "none",
             "annotations": [
@@ -1840,7 +1840,7 @@
             "isHidden": true,
             "expression": "\"Qtr \" & [QuarterNo]",
             "sortByColumn": "QuarterNo",
-            "lineageTag": "e4fd9f60-82e6-42f2-9d2d-ca3af5d48a8a",
+            "lineageTag": "dd02fa3c-bb12-4792-b70b-74498861be13",
             "dataCategory": "Quarters",
             "summarizeBy": "none",
             "annotations": [
@@ -1861,7 +1861,7 @@
             "isDataTypeInferred": true,
             "isHidden": true,
             "expression": "DAY([Date])",
-            "lineageTag": "85987ca2-f110-4ef2-b763-7db1179ffcf5",
+            "lineageTag": "e1ca25ff-bdfb-473d-a0eb-49586c236095",
             "dataCategory": "DayOfMonth",
             "summarizeBy": "none",
             "annotations": [
@@ -1889,31 +1889,31 @@
         "hierarchies": [
           {
             "name": "Date Hierarchy",
-            "lineageTag": "a077fff8-9cae-4951-b318-7b5da8d681a9",
+            "lineageTag": "7e623d94-3da3-44ac-9811-60914ba5fa2c",
             "levels": [
               {
                 "name": "Year",
                 "ordinal": 0,
                 "column": "Year",
-                "lineageTag": "201e9b4c-765b-4b2c-b298-338e18def5e1"
+                "lineageTag": "1dad7153-7e79-40d3-bbee-4b48cd1b5284"
               },
               {
                 "name": "Quarter",
                 "ordinal": 1,
                 "column": "Quarter",
-                "lineageTag": "8a8fa462-ec3a-48f6-a545-b147eedcb43b"
+                "lineageTag": "cb03a6ef-e5b3-45a7-98ab-bc1d70fc5dc8"
               },
               {
                 "name": "Month",
                 "ordinal": 2,
                 "column": "Month",
-                "lineageTag": "f7ded334-043c-49c3-ae2c-f8fa739dacf7"
+                "lineageTag": "6c2cd4d6-1128-46a1-b310-129b186f9ab9"
               },
               {
                 "name": "Day",
                 "ordinal": 3,
                 "column": "Day",
-                "lineageTag": "37228281-d06d-4948-9b8b-7c8b1e506d5b"
+                "lineageTag": "087a772c-6b70-4c0a-bb2f-42102e357a45"
               }
             ],
             "annotations": [
@@ -2018,7 +2018,7 @@
       },
       {
         "name": "PBIDesktopVersion",
-        "value": "2.105.664.0 (22.05)"
+        "value": "2.110.1161.0 (22.10)"
       },
       {
         "name": "PBI_QueryOrder",

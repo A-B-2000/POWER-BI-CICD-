@@ -7,13 +7,11 @@
           "From": [
             {
               "Name": "e",
-              "Entity": "Executive",
-              "Type": 0
+              "Entity": "Executive"
             },
             {
               "Name": "d",
-              "Entity": "Date",
-              "Type": 0
+              "Entity": "Date"
             }
           ],
           "Select": [
@@ -129,8 +127,7 @@
           },
           "IncludeEmptyGroups": true,
           "Version": 1
-        },
-        "ExecutionMetricsKind": 1
+        }
       }
     }
   ]

@@ -49,7 +49,7 @@
         "Restatement": "Revenue Var % to Budget",
         "Name": "Fact.Revenue Var % to Budget",
         "Type": 1,
-        "Format": "0.00%;-0.00%;0.00%"
+        "Format": "0.00 %;-0.00 %;0.00 %"
       }
     ]
   },
@@ -112,8 +112,6 @@
       "roles": {
         "Category": true
       },
-      "sort": 1,
-      "sortOrder": 0,
       "type": {
         "category": null,
         "underlyingType": 1
@@ -131,7 +129,7 @@
     },
     {
       "displayName": "Revenue Var % to Budget",
-      "format": "0.00%;-0.00%;0.00%",
+      "format": "0.00 %;-0.00 %;0.00 %",
       "queryName": "Fact.Revenue Var % to Budget",
       "roles": {
         "Y2": true
