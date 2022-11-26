@@ -34,9 +34,31 @@
                     "Source": "f"
                   }
                 },
-                "Property": "# of Products"
+                "Property": "Revenue Var % to Budget"
               },
-              "Name": "Fact.# of Products"
+              "Name": "Fact.Revenue Var % to Budget"
+            },
+            {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Source": "d"
+                  }
+                },
+                "Property": "Month"
+              },
+              "Name": "Date.Month"
+            },
+            {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Source": "e"
+                  }
+                },
+                "Property": "Name"
+              },
+              "Name": "Executive.Name"
             }
           ],
           "Where": [
@@ -212,6 +234,21 @@
                 }
               }
             }
+          ],
+          "OrderBy": [
+            {
+              "Direction": 1,
+              "Expression": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Source": "d"
+                    }
+                  },
+                  "Property": "Month"
+                }
+              }
+            }
           ]
         },
         "Binding": {
@@ -219,15 +256,32 @@
             "Groupings": [
               {
                 "Projections": [
-                  0
+                  0,
+                  1
+                ]
+              }
+            ]
+          },
+          "Secondary": {
+            "Groupings": [
+              {
+                "Projections": [
+                  2
                 ]
               }
             ]
           },
           "DataReduction": {
-            "DataVolume": 3,
+            "DataVolume": 4,
             "Primary": {
-              "Top": {}
+              "Window": {
+                "Count": 200
+              }
+            },
+            "Secondary": {
+              "Top": {
+                "Count": 60
+              }
             }
           },
           "Version": 1

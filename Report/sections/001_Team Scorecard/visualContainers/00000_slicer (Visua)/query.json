@@ -6,18 +6,13 @@
           "Version": 2,
           "From": [
             {
-              "Name": "f",
-              "Entity": "Fact",
+              "Name": "e",
+              "Entity": "Executive",
               "Type": 0
             },
             {
               "Name": "d",
               "Entity": "Date",
-              "Type": 0
-            },
-            {
-              "Name": "e",
-              "Entity": "Executive",
               "Type": 0
             },
             {
@@ -28,15 +23,15 @@
           ],
           "Select": [
             {
-              "Measure": {
+              "Column": {
                 "Expression": {
                   "SourceRef": {
-                    "Source": "f"
+                    "Source": "e"
                   }
                 },
-                "Property": "# of Products"
+                "Property": "Name"
               },
-              "Name": "Fact.# of Products"
+              "Name": "Executive.Name"
             }
           ],
           "Where": [
@@ -227,9 +222,10 @@
           "DataReduction": {
             "DataVolume": 3,
             "Primary": {
-              "Top": {}
+              "Window": {}
             }
           },
+          "IncludeEmptyGroups": true,
           "Version": 1
         },
         "ExecutionMetricsKind": 1

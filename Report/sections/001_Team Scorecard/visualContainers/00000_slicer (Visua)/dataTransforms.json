@@ -1,15 +1,24 @@
 {
+  "objects": {},
   "projectionOrdering": {
     "Values": [
       0
     ]
   },
+  "projectionActiveItems": {
+    "Values": [
+      {
+        "queryRef": "Executive.Name",
+        "suppressConcat": false
+      }
+    ]
+  },
   "queryMetadata": {
     "Select": [
       {
-        "Restatement": "# of Products",
-        "Name": "Fact.# of Products",
-        "Type": 3
+        "Restatement": "Name",
+        "Name": "Executive.Name",
+        "Type": 2048
       }
     ]
   },
@@ -19,30 +28,30 @@
         {
           "Name": "Values",
           "Projection": 0,
-          "isActive": false
+          "isActive": true
         }
       ]
     }
   ],
   "selects": [
     {
-      "displayName": "# of Products",
-      "queryName": "Fact.# of Products",
+      "displayName": "Name",
+      "queryName": "Executive.Name",
       "roles": {
         "Values": true
       },
       "type": {
         "category": null,
-        "underlyingType": 260
+        "underlyingType": 1
       },
       "expr": {
-        "Measure": {
+        "Column": {
           "Expression": {
             "SourceRef": {
-              "Entity": "Fact"
+              "Entity": "Executive"
             }
           },
-          "Property": "# of Products"
+          "Property": "Name"
         }
       }
     }

@@ -6,6 +6,11 @@
           "Version": 2,
           "From": [
             {
+              "Name": "s",
+              "Entity": "State",
+              "Type": 0
+            },
+            {
               "Name": "f",
               "Entity": "Fact",
               "Type": 0
@@ -28,15 +33,26 @@
           ],
           "Select": [
             {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Source": "s"
+                  }
+                },
+                "Property": "State"
+              },
+              "Name": "State.State"
+            },
+            {
               "Measure": {
                 "Expression": {
                   "SourceRef": {
                     "Source": "f"
                   }
                 },
-                "Property": "# of Products"
+                "Property": "RevenueTY"
               },
-              "Name": "Fact.# of Products"
+              "Name": "Fact.RevenueTY"
             }
           ],
           "Where": [
@@ -219,17 +235,34 @@
             "Groupings": [
               {
                 "Projections": [
-                  0
+                  0,
+                  1
                 ]
               }
             ]
           },
           "DataReduction": {
-            "DataVolume": 3,
+            "DataVolume": 4,
             "Primary": {
               "Top": {}
             }
           },
+          "Aggregates": [
+            {
+              "Select": 1,
+              "Aggregations": [
+                {
+                  "Min": {}
+                },
+                {
+                  "Max": {}
+                }
+              ]
+            }
+          ],
+          "SuppressedJoinPredicates": [
+            1
+          ],
           "Version": 1
         },
         "ExecutionMetricsKind": 1
